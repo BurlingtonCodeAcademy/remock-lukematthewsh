@@ -1,0 +1,45 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+p{
+    font-size: 15px;
+}
+
+#mainContainer{
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". header header header . "
+    " . . . . . "
+    "main main main features features"
+    "footer footer footer footer footer"
+}
+#header{
+    background-image: url('smuggs.jpg');
+    border-bottom: double lightblue 10px;
+    grid-area: header;
+    font-family: fantasy;
+    font-size: 50px;
+    height: auto;
+    text-align:center;
+}
+
+#main{
+    grid-area: main;
+    background-color: orange;
+    height: 50px;
+}
+#features{
+    grid-area: features;
+    background-color:yellow;
+    height:50px;
+}
+#footer{
+    grid-area: footer;
+    background-color:purple;
+    height:10px;
+    overflow:scroll;
+}
