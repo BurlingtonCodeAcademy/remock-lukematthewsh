@@ -4,13 +4,13 @@ body{
 }
 p{
     font-size: 15px;
+
 }
 h1{
     margin-bottom: 10px;
 }
 h2{
     font-family: fantasy;
-    border-bottom: 
 }
 .lineBreak{
     border-bottom: #84A5b8 solid 1px;
@@ -18,9 +18,14 @@ h2{
 .doubleBreak{
     border-bottom: #84A5b8 double 4px;
 }
+.logo{
+    max-width: 350px;
+    margin: 30px;
+}
 
 /*--------------------------------------------------------------*/
 /* Main Container styles */
+
 
 #mainContainer{
     display: grid;
@@ -28,6 +33,7 @@ h2{
     grid-template-rows: auto;
     grid-template-areas: 
     ". header header header . "
+    ". title title title ."
     "topImgHolder topImgHolder topImgHolder topImgHolder topImgHolder"
     "quoteBar quoteBar quoteBar quoteBar quoteBar"
     " . main main features . "
@@ -38,15 +44,34 @@ h2{
 /*--------------------------------------------------------------*/
 /* Header Styles */
 
+div[id^="dorp"]{
+    margin: 5px;
+    font-size: 15px;
+    border: solid 2px #84A5b8
+}
+
+div[id^="dorp"]:hover{
+    box-shadow: 2px 2px 2px black;
+}
+#drop-down{
+    display: none;
+}
+
+#header:hover
+#drop-down{
+    display: inline-block;
+    margin-top: 60px;
+}
+
 
 #header{
+    margin-bottom: 10vh;
     border-bottom: double lightblue 10px;
     grid-area: header;
     font-family: fantasy;
     font-size: 50px;
     height: auto;
     text-align:center;
-    margin-bottom: 13vh;
     display: flex;
     justify-content: center;
 }
@@ -64,7 +89,7 @@ h2{
     
 }
 .firstImgs{
-    border: 2px solid silver;
+    border: 3px solid #84A5b8;
     max-width: 400px;
     max-height: 300px;
 }
@@ -72,6 +97,7 @@ h2{
     margin-top: 10px;
     text-align:  center;
     font-family: fantasy;
+    font-size: 18px;
 }
 
 /*--------------------------------------------------------------*/
