@@ -10,31 +10,30 @@
 
 <body>
   <div id="mainContainer">
-      <script>
-          function goToHome (){
-            location.replace("/Users/lukematthews/codeFT/projects/remock-lukematthewsh-JoshJakab/index.html")
-          }
-          function goToLearnMore (){
-            location.replace('/Users/lukematthews/codeFT/projects/remock-lukematthewsh-JoshJakab/learn-more.html')
-          }
-          function goToBlogs (){
-            location.replace('/Users/lukematthews/codeFT/projects/remock-lukematthewsh-JoshJakab/blog-post.html')
-          }
-          function goToContinueReading () {
-            location.replace('/Users/lukematthews/codeFT/projects/remock-lukematthewsh-JoshJakab/continue-reading.html')
-          }
-          
-          </script>
     <section id="header">
       <img class='logo' src="header.jpg" />
       <div id=drop-down>
-        <div id='dorphome' onclick="goToHome()">Home</div>
-        <div id='dorplearnMore' onclick = "goToLearnMore()">Learn More</div>
-        <div id='dorpblog' onclick = "goToBlogs()">Blogs</div>
-        <div id='dorpcontinueRead'onclick = "goToContinueReading()">Continue Reading</div>
+        <div id='dorphome'>
+          <a href='index.html'>
+            Home
+          </a>
+        </div>
+        <div id='dorplearnMore'>
+          <a href='learn-more.html'>
+            Learn More
+          </a>
+        </div>
+        <div id='dorpBlog'>
+          <a href='blog-post.html'>
+            Blogs
+          </a>
+        </div>
+        <div id='dorpcontinueRead'>
+          <a href = 'continue-reading.html'>Continue Reading</a>
+      </div>
       </div>
     </section>
-    <section id = title>
+    <section id=title>
       Home
     </section>
 
@@ -89,7 +88,7 @@
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, et ducimus. Cupiditate porro corporis
         accusantium doloremque aspernatur recusandae ducimus distinctio, quis totam. Saepe delectus dicta tempora modi,
       </p>
-      <div class='learnMore' onclick = "goToBlogs()">Learn More</div>
+      <div class='learnMore' onclick="goToBlogs()">Learn More</div>
       <div class='lineBreak'></div>
 
       <h2>Something Else of Note</h2>
@@ -127,10 +126,10 @@
     <section id="footer">
       <img id="footerimg" src="Footer.jpg" />
     </section>
-      
-	</g>
-</g>
-</svg>
+
+    </g>
+    </g>
+    </svg>
 
 
     </section>

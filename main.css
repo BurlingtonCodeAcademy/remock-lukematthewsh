@@ -53,12 +53,15 @@ h2{
     font-family: fantasy
 }
 
-
+a{
+    text-decoration: none;
+}
 
 div[id^="dorp"]{
     margin: 5px;
     font-size: 15px;
-    border: solid 2px #84A5b8
+    border: solid 2px #84A5b8;
+    text-decoration: none;
 }
 
 div[id^="dorp"]:hover{
