@@ -201,12 +201,25 @@ div[id^="dorp"]:hover{
     grid-area: footer;
     height:700px;
     display: flex;
-    justify-content: center;
-    align-items: stretch;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-image: url("footer.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
 }
 
-#footerimg{
-    width: 100vw
+#form{
+    margin-right: 150px;
+    margin-bottom: 25px;
+    color: white;
+    position: relative;
 }
+
+#description{
+    min-width: 250px;
+    min-height: 150px;
+    display: flex;
+}
+
 
 
