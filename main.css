@@ -199,9 +199,14 @@ div[id^="dorp"]:hover{
 
 #footer{
     grid-area: footer;
-    background-color:purple;
-    height:10px;
-    overflow:scroll;
+    height:700px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#footerimg{
+    width: 100vw
 }
 
 
