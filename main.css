@@ -5,41 +5,165 @@ body{
 p{
     font-size: 15px;
 }
+h1{
+    margin-bottom: 10px;
+}
+h2{
+    font-family: fantasy;
+    border-bottom: 
+}
+.lineBreak{
+    border-bottom: #84A5b8 solid 1px;
+}
+.doubleBreak{
+    border-bottom: #84A5b8 double 4px;
+}
+
+/*--------------------------------------------------------------*/
+/* Main Container styles */
 
 #mainContainer{
     display: grid;
-    grid-gap:10px;
     grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
     grid-template-rows: auto;
     grid-template-areas: 
     ". header header header . "
-    " . . . . . "
-    "main main main features features"
+    "topImgHolder topImgHolder topImgHolder topImgHolder topImgHolder"
+    "quoteBar quoteBar quoteBar quoteBar quoteBar"
+    " . main main features . "
     "footer footer footer footer footer"
 }
+
+
+/*--------------------------------------------------------------*/
+/* Header Styles */
+
+
 #header{
     background-image: url('smuggs.jpg');
     border-bottom: double lightblue 10px;
+    border-top-right-radius: 60%;
     grid-area: header;
     font-family: fantasy;
     font-size: 50px;
     height: auto;
     text-align:center;
+    margin-bottom: 13vh;
 }
 
+
+/*--------------------------------------------------------------*/
+/* Top Images Styles */
+
+#topImgHolder{
+    grid-area: topImgHolder;
+    height: auto;
+    display: flex;
+    justify-content: center;;
+    margin-bottom: 13vh;
+    
+}
+.firstImgs{
+    border: 2px solid silver;
+    max-width: 400px;
+    max-height: 300px;
+}
+.caption{
+    margin-top: 10px;
+    text-align:  center;
+    font-family: fantasy;
+}
+
+/*--------------------------------------------------------------*/
+/* Quote Bar Styles */
+
+#quoteBar{
+    margin-bottom: 10vh;
+    display: flex;
+    height: 150px;
+    grid-area: quoteBar;
+    align-items: center;
+    justify-content: center;
+}
+
+/*--------------------------------------------------------------*/
+/* Main Articles Styles */
+
 #main{
+    padding: 5px;
+    margin: 10px;
     grid-area: main;
-    background-color: orange;
-    height: 50px;
+    height: 100vh;
+    overflow: scroll;   
 }
+.continueReading{
+    font-size: 12px;
+    margin-bottom: 15px;
+    max-width: 100px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(179, 218, 241); 
+    box-shadow: 1px 1px 1px black;
+}
+.continueReading:hover{
+    box-shadow: 2px 2px 2px
+}
+.articleImgs{
+    max-width:35vw;
+    height: auto;
+    border: rgb(179, 218, 241) solid 2px;
+    
+
+}
+
+
+/*--------------------------------------------------------------*/
+/* Blog Post Styles */
+
 #features{
+    padding: 5px;
+    margin: 10px;
     grid-area: features;
-    background-color:yellow;
-    height:50px;
+    height:100vh;
+    overflow: scroll;
 }
+.date{
+    margin-top: 15px;
+    display: flex;
+    background-color: rgb(66, 104, 124);
+    align-items: center;
+    justify-content: center;
+    max-width: 75px;
+    height: 25px;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 5%;
+    color: white;
+}
+
+.learnMore{
+    font-size: 12px;
+    margin-bottom: 15px;
+    max-width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(179, 218, 241); 
+    box-shadow: 1px 1px 1px black;
+    border-radius: 5%
+}
+.learnMore:hover{
+    box-shadow: 2px 2px 2px
+}
+
+/*--------------------------------------------------------------*/
+/* Footer Styles */
+
 #footer{
     grid-area: footer;
     background-color:purple;
     height:10px;
     overflow:scroll;
 }
+
