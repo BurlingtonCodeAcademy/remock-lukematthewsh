@@ -40,15 +40,15 @@ h2{
 
 
 #header{
-    background-image: url('smuggs.jpg');
     border-bottom: double lightblue 10px;
-    border-top-right-radius: 60%;
     grid-area: header;
     font-family: fantasy;
     font-size: 50px;
     height: auto;
     text-align:center;
     margin-bottom: 13vh;
+    display: flex;
+    justify-content: center;
 }
 
 
