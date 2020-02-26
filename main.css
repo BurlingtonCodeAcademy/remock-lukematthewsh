@@ -10,7 +10,7 @@ h1{
     margin-bottom: 10px;
 }
 h2{
-    font-family: fantasy;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
 }
 .lineBreak{
     border-bottom: #84A5b8 solid 1px;
@@ -44,13 +44,16 @@ h2{
 /*--------------------------------------------------------------*/
 /* Header Styles */
 #title{
+    text-shadow: 2px 2px black;
     grid-area: title;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 45px;
     margin-bottom: 13vh;
-    font-family: fantasy
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    color: #84A5b8
 }
 
 a{
@@ -110,7 +113,7 @@ div[id^="dorp"]:hover{
 .caption{
     margin-top: 10px;
     text-align:  center;
-    font-family: fantasy;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 18px;
 }
 
@@ -225,4 +228,91 @@ div[id^="dorp"]:hover{
 }
 
 
+/*--------------------------------------------------------*/
+/* Container for blog page styles */
 
+#blogContainer{
+display: grid;
+grid-gap: 0;
+grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+grid-template-rows: auto;
+grid-template-areas: 
+". header header header . "
+". title title title ."
+" . post1 post2 post3 . "
+" . post4 post5 post6 . "
+" . bottomLeft post7 bottomRight ."
+"footer footer footer footer footer"
+}
+
+#bottomLeft{
+    
+    border: solid 2px #84A5b8;
+    max-width: 20vw;
+    grid-area: bottomLeft;
+}
+#bottomRight{
+    
+    border: solid 2px #84A5b8;
+    max-width: 20vw;
+    grid-area: bottomRight;
+}
+
+#post1{
+    margin: 15px;
+    grid-area: post1;
+}
+#post2{
+    margin: 15px;
+    grid-area: post2
+}
+#post3{
+    margin: 15px;
+    grid-area: post3
+}
+#post4{
+    margin: 15px;
+    grid-area: post4
+}
+#post5{
+    margin: 15px;
+    grid-area: post5
+}
+#post6{
+    margin: 15px;
+    grid-area: post6
+}
+#post7{
+    margin: 15px;
+    grid-area: post7
+}
+
+
+/*--------------------------------------------------------*/
+/* Container for learn more page styles */
+
+#learnContainer{
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". header header header . "
+    ". title title title ."
+    " . main main features . "
+    "footer footer footer footer footer"
+    }
+
+
+/*--------------------------------------------------------*/
+/* Container for continue reading page styles */
+
+#continueReadingContainer{
+display: grid;
+grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+grid-template-rows: auto;
+grid-template-areas: 
+". header header header . "
+". title title title ."
+" . main main features . "
+"footer footer footer footer footer"
+}
