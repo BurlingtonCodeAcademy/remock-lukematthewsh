@@ -11,25 +11,49 @@
 <body>
   <div id="mainContainer">
     <section id="header">
-      <h1>
-        <img src="header.jpg" />    
-            
-        </h1>
+      <img class='logo' src="header.jpg" />
+      <div id=drop-down>
+        <div id='dorphome' onclick="goToHome()">Home</div>
+        <div id='dorplearnMore' onclick = "goToLearnMore()">Learn More</div>
+        <div id='dorpblog' onclick = "goToBlogs()">Blogs</div>
+        <div id='dorpcontinueRead'onclick = "goToContinueReading()">Continue Reading</div>
+
+        <script>
+        function goToHome (){
+          location.replace("/Users/lukematthews/codeFT/projects/remock-lukematthewsh-JoshJakab/index.html")
+        }
+        function goToLearnMore (){
+          location.replace('/Users/lukematthews/codeFT/projects/remock-lukematthewsh-JoshJakab/learn-more.html')
+        }
+        function goToBlogs (){
+          location.replace('/Users/lukematthews/codeFT/projects/remock-lukematthewsh-JoshJakab/blog-post.html')
+        }
+        function goToContinueReading () {
+          location.replace('/Users/lukematthews/codeFT/projects/remock-lukematthewsh-JoshJakab/continue-reading.html')
+        }
+        
+        </script>
+
+
+      </div>
     </section>
 
     <!------------------------------------------------------------------------------------------------->
 
     <section id='topImgHolder'>
       <figure>
-        <img class='firstImgs' src='IMG_7179.jpg'> </img> <figcaption class='caption'>Caption one
+        <img class='firstImgs' src='IMG_7179.jpg'> </img>
+        <figcaption class='caption'>Caption one
         </figcaption>
       </figure>
       <figure>
-        <img class='firstImgs' src='IMG_7188.jpg'> </img> <figcaption class='caption'>Caption two
+        <img class='firstImgs' src='IMG_7188.jpg'> </img>
+        <figcaption class='caption'>Caption two
         </figcaption>
       </figure>
       <figure>
-        <img class='firstImgs' src= 'IMG_5365.jpg'> </img> <figcaption class='caption'>Caption three
+        <img class='firstImgs' src='IMG_5365.jpg'> </img>
+        <figcaption class='caption'>Caption three
         </figcaption>
       </figure>
     </section>
