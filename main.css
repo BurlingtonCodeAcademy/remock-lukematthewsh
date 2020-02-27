@@ -146,6 +146,7 @@ div[id^="dorp"]:hover{
 /* Quote Bar Styles */
 
 #quoteBar{
+    background-image: url('1234.jpg');
     margin-bottom: 10vh;
     display: flex;
     height: 150px;
@@ -230,13 +231,12 @@ div[id^="dorp"]:hover{
 
 #footer{
     grid-area: footer;
-    height: 700px;
+    height: 600px;
     display: flex;
     align-content: flex-end;
     justify-content: flex-end;
     background-repeat: no-repeat;
-    background-size: 100vw;
-    background-color: rgb(63, 59, 77);
+    width: 100vw;
     color: white;
     padding: 10px;
     display: flex;
@@ -246,18 +246,13 @@ div[id^="dorp"]:hover{
 
   /* Style inputs */
   input[type=text], select, textarea {
-    width: 100%;
+    width: 80%;
     padding: 12px;
     border: 1px solid #ccc;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    margin-right: 20px;
-    resize: vertical;
   }
   input[type=submit] {
     background-color: lightblue;
     color: white;
-    padding: 12px 20px;
     border: none;
     cursor: pointer;
   }
@@ -266,19 +261,24 @@ div[id^="dorp"]:hover{
     background-color:rgb(124, 198, 223);
   }
   
-  /* Style the container/contact section */
-  
-  
-  /* Create two columns that float next to eachother */
   .column {
+      border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-content:center; ;
+    background-color:rgb(46, 136, 167);
+    background-image: url('IMG_7188.jpg');
+    background-blend-mode:multiply;
     font-weight: bold;
-    text-shadow: 2px 2px black;
-    float: left;
-    width: 25%;
+    width: auto;
     margin-right: 10vw;
     margin-top: 5vh;
     padding: 20px;
-  }
+    }
+    input[type=file]{
+     color: transparent;
+
+    }
 
 
 

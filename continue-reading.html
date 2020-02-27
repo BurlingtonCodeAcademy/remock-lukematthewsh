@@ -10,6 +10,9 @@
 
 <body>
   <section id=continueReadingContainer>
+
+
+    
     <section id="header">
       <img class='logo' src="header.jpg" />
       <div id=drop-down>
@@ -33,6 +36,9 @@
         </div>
       </div>
     </section>
+
+
+
     <section id=title>
       Continue Reading
     </section>
@@ -154,15 +160,17 @@
       <div class='doubleBreak'></div>
     </section>
 
-    <div id='footer' style="background-image: url('footer.jpg')">
-        <div class="column">
-          <form action="/action_page.php">
-            <label for="fname">Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-            <label for="subject">Message</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
-            <input type="submit" value="Submit">
-          </form>
+    <div id='footer' style="background-image: url('footerWide.jpg')">
+      <div class="column">
+        <form>
+          <label for="fname">Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="image">Upload Image</label><br>
+          <input type="file" id="fileid" name="image"><br>
+          <label for="subject">Message</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+          <input type="submit" onclick="alert('Submitted!')" value="Submit">
+        </form>
       </div>
     </div>
   </section>

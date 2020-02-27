@@ -59,7 +59,7 @@
 
     <!------------------------------------------------------------------------------------------------->
 
-    <section id=quoteBar style="background-image: url('1234.jpg')">
+    <section id=quoteBar >
       <h3>Some very random quote</h3>
     </section>
     <section id="features">
@@ -122,24 +122,20 @@
     </section>
 
     <!------------------------------------------------------------------------------------------------->
-    <div id='footer' style="background-image: url('footer.jpg')">
-        <div class="column">
-          <form action="/action_page.php">
-            <label for="fname">Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-            <label for="subject">Message</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
-            <input type="submit" value="Submit">
-          </form>
+
+    <div id='footer' style="background-image: url('footerWide.jpg')">
+      <div class="column">
+        <form>
+          <label for="fname">Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="image">Upload Image</label><br>
+          <input type="file" id="fileid" name="image"><br>
+          <label for="subject">Message</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+          <input type="submit" onclick="alert('Submitted!')" value="Submit">
+        </form>
       </div>
     </div>
-    </section>
-  </div>
 </body>
 
 </html>
-
-
-<label for="image">Upload Image</label><br>
-<input type="file" id="image" name="image"><br>
-<button type="button" onclick="alert('Submitted!')">Submit</button>
