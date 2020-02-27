@@ -195,24 +195,38 @@ div[id^="dorp"]:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(179, 218, 241); 
+    background-color:rgb(112, 138, 153);  
     box-shadow: 1px 1px 1px black;
+    color: white;
 }
 .continueReading:hover{
-    box-shadow: 2px 2px 2px
+    box-shadow: 2px 2px 2px black
 }
 .articleImgs{
     max-width:35vw;
     height: auto;
     border: rgb(179, 218, 241) solid 2px;
-    
-
+}
+.LearnMore{
+    font-size: 12px;
+    margin-bottom: 15px;
+    max-width: 100px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(112, 138, 153); 
+    box-shadow: 1px 1px 1px black;
+    color: white;
+}
+.LearnMore:hover{
+    box-shadow: 2px 2px 2px black;
 }
 
 
 /*--------------------------------------------------------------*/
 /* Blog Post Styles */
-
+a{color: inherit;}
 #features{
     padding: 5px;
     margin: 10px;
@@ -231,22 +245,14 @@ div[id^="dorp"]:hover{
     box-shadow: 1px 1px 1px black;
     border-radius: 5%;
     color: white;
+    
+}
+.date:hover{
+    background-color: rgb(47, 75, 90);
+    box-shadow: 2px 2px 2px black;
 }
 
-.learnMore{
-    font-size: 12px;
-    margin-bottom: 15px;
-    max-width: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(179, 218, 241); 
-    box-shadow: 1px 1px 1px black;
-    border-radius: 5%
-}
-.learnMore:hover{
-    box-shadow: 2px 2px 2px
-}
+
 
 /*--------------------------------------------------------------*/
 /* Footer Styles */
