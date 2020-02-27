@@ -9,9 +9,17 @@ p{
 }
 h1{
     margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
 }
 h2{
+    text-decoration-line: underline;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+}
+h3{
+    font-family: cursive;
+    font-size: 50px;
+    color: lightblue
 }
 .lineBreak{
     border-bottom: #84A5b8 solid 1px;
@@ -41,7 +49,7 @@ h2{
 
 
 #mainContainer{
-
+    max-height: 100vh;
     display: grid;
     grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
     grid-template-rows: auto;
@@ -65,7 +73,9 @@ h2{
     align-items: center;
     font-size: 45px;
     margin-bottom: 13vh;
-    font-family: arial
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    color: lightblue
 }
 
 a{
@@ -118,7 +128,8 @@ div[id^="dorp"]:hover{
     
 }
 .firstImgs{
-    border: 3px solid #84A5b8;
+    box-shadow: 2px 2px 2px;
+    border: 10px double lightblue;
     max-width: 300px;
     max-height: 200px;
 }
@@ -126,7 +137,9 @@ div[id^="dorp"]:hover{
     margin-top: 10px;
     text-align:  center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
     font-size: 18px;
+
 }
 
 /*--------------------------------------------------------------*/
@@ -216,28 +229,57 @@ div[id^="dorp"]:hover{
 /* Footer Styles */
 
 #footer{
-   
     grid-area: footer;
-    height:700px;
+    height: 700px;
     display: flex;
+    align-content: flex-end;
     justify-content: flex-end;
-    align-items: flex-end;
-    background-image: url("footer.jpg");
     background-repeat: no-repeat;
     background-size: 100vw;
-}
-
-#form{
-    margin-bottom: 25px;
-    margin-right: 150px;
+    background-color: rgb(63, 59, 77);
     color: white;
+    padding: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
-#description{
-    min-width: 250px;
-    min-height: 150px;
-    display: flex;
-}
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-right: 20px;
+    resize: vertical;
+  }
+  input[type=submit] {
+    background-color: lightblue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color:rgb(124, 198, 223);
+  }
+  
+  /* Style the container/contact section */
+  
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    font-weight: bold;
+    text-shadow: 2px 2px black;
+    float: left;
+    width: 25%;
+    margin-right: 10vw;
+    margin-top: 5vh;
+    padding: 20px;
+  }
+
 
 
 /*--------------------------------------------------------*/
@@ -329,11 +371,16 @@ grid-template-areas:
 "footer footer footer footer footer"
 }
 
-#articleImage{
+.articleImage{
+    border: #84A5b8 solid 3px;;
+    max-width: 400px;
     float: left;
+    margin: 10px;
     
 }
 #articles{
+    height: 100vh;
+    overflow: scroll; 
     grid-area: articles;
     
 }

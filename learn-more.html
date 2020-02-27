@@ -36,18 +36,17 @@
 		<section id=title>
 			Learn More!
 		</section>
-		<section id="footer">
-			<form id="form">
-				<label for="name">Name</label><br>
-				<input type="text" id="name" name="name"><br>
-				<label for="image">Upload Image</label><br>
-				<input type="file" id="image" name="image"><br>
-				<textarea for="description" rows="10">Description</textarea>
-				<button type="button" onclick="alert('Submitted!')">Submit</button>
-			</form>
-		</section>
-
-
+		<div id='footer' style="background-image: url('footer.jpg')">
+				<div class="column">
+				  <form action="/action_page.php">
+					<label for="fname">Name</label>
+					<input type="text" id="fname" name="firstname" placeholder="Your name..">
+					<label for="subject">Message</label>
+					<textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+					<input type="submit" value="Submit">
+				  </form>
+			  </div>
+			</div>
 	</section>
 </body>
 
