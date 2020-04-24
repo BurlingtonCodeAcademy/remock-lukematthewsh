@@ -169,7 +169,7 @@ div[id^="dorp"]:hover{
 /* Quote Bar Styles */
 
 #quoteBar{
-    background-image: url('1234.jpg');
+    background-image: url('imgs/1234.jpg');
     margin-bottom: 10vh;
     display: flex;
     height: 150px;
