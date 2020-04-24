@@ -5,7 +5,7 @@
   <title>Mockup Home</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="/Public/CSS/main.css" />
 </head>
 
 <body>
@@ -15,7 +15,7 @@
     <!--Header HTML-->
 
     <section id="header">
-      <img class='logo' src="header.jpg" />
+      <img class='logo' src="/Public/Images/Header.jpg" />
       <div id=drop-down>
         <div id='dorphome'>
           <a href='index.html'>
@@ -46,17 +46,17 @@
 
     <section id='topImgHolder'>
       <figure>
-        <img class='firstImgs' src='IMG_7179.jpg'> </img>
+        <img class='firstImgs' src='/Public/Images/IMG_7179.jpg'> </img>
         <figcaption class='caption'>Caption one
         </figcaption>
       </figure>
       <figure>
-        <img class='firstImgs' src='IMG_7188.jpg'> </img>
+        <img class='firstImgs' src='/Public/Images/IMG_7188.jpg'> </img>
         <figcaption class='caption'>Caption two
         </figcaption>
       </figure>
       <figure>
-        <img class='firstImgs' src='IMG_5365.jpg'> </img>
+        <img class='firstImgs' src='/Public/Images/IMG_5365.jpg'> </img>
         <figcaption class='caption'>Caption three
         </figcaption>
       </figure>
@@ -115,7 +115,7 @@
 
     <section id="main">
       <h2>Awesome post</h2>
-      <img class=articleImgs src='IMG_0524.jpg' />
+      <img class=articleImgs src='/Public/Images/IMG_0524.jpg' />
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quod harum voluptatem quasi quaerat ad
         temporibus, ut animi est culpa quos? Laudantium, ad necessitatibus! Reiciendis distinctio ipsum, cum repellendus
         vero quas laborum voluptatum eum nostrum et. Excepturi nihil iusto ex sed nobis ipsum culpa tempora, quisquam
@@ -123,7 +123,7 @@
       <div class='continueReading'><a href='continue-reading.html'>Continue Reading</a></div>
       <div class='doubleBreak'></div>
       <h2>Some awesome story</h2>
-      <img class=articleImgs src='IMG_0524.jpg' />
+      <img class=articleImgs src='/Public/Images/IMG_0524.jpg' />
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, et ducimus. Cupiditate porro corporis
         accusantium doloremque aspernatur recusandae ducimus distinctio, quis totam. Saepe delectus dicta tempora modi,
         velit laboriosam reprehenderit maiores eius ullam sed facere nesciunt. Consequatur et adipisci iste est natus,
@@ -134,19 +134,44 @@
 
     <!------------------------------------------------------------------------------------------------->
     <!--Footer HTML-->
-    <div id='footer' style="background-image: url('footerWide.jpg')">
-      <div class="column">
-        <form>
-          <label for="fname">Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          <label for="image">Upload Image</label><br>
-          <input type="file" id="fileid" name="image"><br>
-          <label for="subject">Message</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
-          <input type="submit" onclick="alert('Submitted!')" value="Submit">
+    <section id="footer">
+      <div>QUESTIONS OR COMMENTS? GET IN TOUCH:</div>
+      <div id="contact">
+        <form id="contact-form">
+          <input type="text" value="Name" />
+          <input type="text" value="Email" />
+          <textarea id="message" type="text">Message</textarea>
+          <button id="submit-button">Send Message</button>
         </form>
+        <div id="contact-info">
+          <div class="contact-item">
+            <div>1234 Somewhere Road Burlington, VT 00000 USA</div>
+          </div>
+          <div id="links">
+          <div class="contact-item">
+            <img class="contact-icons" src="Public/Images/footerlink-phone.png" />
+            <div>(555) 555-5555</div>
+          </div>
+          <div class="contact-item">
+            <img class="contact-icons" src="Public/Images/footerlink-email.png" />
+            <div>yourname@email.com</div>
+          </div>
+          <div class="contact-item">
+            <img class="contact-icons" src="Public/Images/footerlink-facebook.png" />
+            <div>facebook.com</div>
+          </div>
+          <div class="contact-item">
+            <img class="contact-icons" src="Public/Images/footerlink-instagram.png" />
+            <div>instagram.com</div>
+          </div>
+          <div class="contact-item">
+            <img class="contact-icons" src="Public/Images/footerlink-twitter.png" />
+            twitter.com
+          </div>
+        </div>
+        </div>
       </div>
-    </div>
+    </section>
 </body>
 
 </html>

@@ -5,7 +5,7 @@
   <title>Blog Post</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="/Public/CSS/main.css" />
 </head>
 
 <body>
@@ -15,7 +15,7 @@
     <!--Header HTMl-->
 
     <section id="header">
-      <img class='logo' src="header.jpg" />
+      <img class='logo' src="/Public/Images/Header.jpg" />
       <div id=drop-down>
         <div id='dorphome'>
           <a href='index.html'>
@@ -108,25 +108,50 @@
     <!------------------------------------------------------------------------------------------------->
     <!--Images In posts-->
 
-    <img id=bottomLeft src="downloadmobile.jpeg" />
-    <img id=bottomRight src="downloadsnow.jpeg" />
+    <img id=bottomLeft src="/Public/Images/downloadmobile.jpeg" />
+    <img id=bottomRight src="/Public/Images/downloadsnow.jpeg" />
 
     <!------------------------------------------------------------------------------------------------->
     <!--Footer HTML-->
 
-    <div id='footer' style="background-image: url('footerWide.jpg')">
-      <div class="column">
-        <form>
-          <label for="fname">Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          <label for="image">Upload Image</label><br>
-          <input type="file" id="fileid" name="image"><br>
-          <label for="subject">Message</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
-          <input type="submit" onclick="alert('Submitted!')" value="Submit">
+    <section id="footer">
+      <div>QUESTIONS OR COMMENTS? GET IN TOUCH:</div>
+      <div id="contact">
+        <form id="contact-form">
+          <input type="text" value="Name" />
+          <input type="text" value="Email" />
+          <textarea id="message" type="text">Message</textarea>
+          <button id="submit-button">Send Message</button>
         </form>
+        <div id="contact-info">
+          <div class="contact-item">
+            <div>1234 Somewhere Road Burlington, VT 00000 USA</div>
+          </div>
+          <div id="links">
+          <div class="contact-item">
+            <img class="contact-icons" src="Public/Images/footerlink-phone.png" />
+            <div>(555) 555-5555</div>
+          </div>
+          <div class="contact-item">
+            <img class="contact-icons" src="Public/Images/footerlink-email.png" />
+            <div>yourname@email.com</div>
+          </div>
+          <div class="contact-item">
+            <img class="contact-icons" src="Public/Images/footerlink-facebook.png" />
+            <div>facebook.com</div>
+          </div>
+          <div class="contact-item">
+            <img class="contact-icons" src="Public/Images/footerlink-instagram.png" />
+            <div>instagram.com</div>
+          </div>
+          <div class="contact-item">
+            <img class="contact-icons" src="Public/Images/footerlink-twitter.png" />
+            twitter.com
+          </div>
+        </div>
+        </div>
       </div>
-    </div>
+    </section>
   </section>
 </body>
 
